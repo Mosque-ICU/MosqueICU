@@ -5,7 +5,10 @@
   "workspaces": [
     "app",
     "api",
+    "client",
     "data",
+    "components",
+    "web/*",
     "database",
     "packages/*",
     "post",
