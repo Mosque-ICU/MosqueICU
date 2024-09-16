@@ -2,7 +2,20 @@
   "name": "data",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "files": [
+    "./public*",
+    "./private*"
+  ],
+  "exports": {
+    "./public": {
+      "import": "./public/*",
+      "require": "./public/*"
+    },
+    "./private": {
+      "import": "./private/*",
+      "require": "./private/*"
+    }
+  },
   "scripts": {
     "demo": "node demo.js"
   },

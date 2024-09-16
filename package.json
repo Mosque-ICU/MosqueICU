@@ -5,8 +5,10 @@
   "workspaces": [
     "app",
     "api",
+    "docker",
     "client",
     "data",
+    "home",
     "modules/*",
     "components",
     "web/*",

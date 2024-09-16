@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
   nats:
     image: nats:latest
     container_name: nats-server
     ports:
-      - "4222:4222"   # NATS client port
-      - "8222:8222"   # HTTP monitoring port
-      - "6222:6222"   # Route connections (used for clustering)
+      - "4222:4222" # NATS client port
+      - "8222:8222" # HTTP monitoring port
+      - "6222:6222" # Route connections (used for clustering)
     environment:
       - NATS_SERVER_NAME=nats-server
       - NATS_CLUSTER_NAME=nats-cluster

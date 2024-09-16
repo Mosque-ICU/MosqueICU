@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { cn } from '@/utils';
 import LogoIcon from '@/assets/rocket.svg?react';
 import routes from '@/routes';
-import MenuItem from '@/components/MenuItem';
+import MenuItem from 'components/MenuItem';
 import HamburgerIcon from '@/assets/menu.svg?react';
 import CLoseIcon from '@/assets/close.svg?react';
 
