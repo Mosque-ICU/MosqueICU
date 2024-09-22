@@ -1,29 +1,16 @@
-// import { Suspense } from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+// The remote component provided by federation_provider
+import { Button } from 'components/button';
+// import Login from './login/page';
 
-// import Loading from '@/components/Loading';
-// import routes from '@/routes';
-// import { Layout } from '@/components/Layout';
-
-// export function App() {
-//   return (
-//     <Router>
-//       <Layout>
-//         <Suspense fallback={<Loading />}>
-//           <Routes>
-//             {routes.map(({ Component, ...props }, index) => {
-//               return <Route key={index} element={<Component />} {...props} />;
-//             })}
-//           </Routes>
-//         </Suspense>
-//       </Layout>
-//     </Router>
-//   );
-// }
-
-import React from 'react';
-import Login from './source/login/page';
-
-export const App = () => {
-  return <Login />;
+const App = () => {
+  return (
+    <div className="content">
+      <h1>Rsbuild with React</h1>
+      <Button>Start building amazing things with Rsbuild.</Button>
+    </div>
+    // <Login />
+  );
 };
+
+export default App;
