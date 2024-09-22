@@ -2397,7 +2397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@headlessui/react@npm:^2.1.1":
+"@headlessui/react@npm:^2.1.1, @headlessui/react@npm:^2.1.8":
   version: 2.1.8
   resolution: "@headlessui/react@npm:2.1.8"
   dependencies:
@@ -2412,7 +2412,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@heroicons/react@npm:^2.1.4":
+"@heroicons/react@npm:^2.1.4, @heroicons/react@npm:^2.1.5":
   version: 2.1.5
   resolution: "@heroicons/react@npm:2.1.5"
   peerDependencies:
@@ -8590,11 +8590,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"auth@workspace:web/auth":
+"auth@workspace:modules/mosqueicu--auth":
   version: 0.0.0-use.local
-  resolution: "auth@workspace:web/auth"
+  resolution: "auth@workspace:modules/mosqueicu--auth"
   dependencies:
     "@chromatic-com/storybook": "npm:^1.6.1"
+    "@headlessui/react": "npm:^2.1.8"
+    "@heroicons/react": "npm:^2.1.5"
     "@rsbuild/core": "npm:^1.0.1-beta.4"
     "@rsbuild/plugin-react": "npm:^1.0.1-beta.4"
     "@rsbuild/plugin-svgr": "npm:^1.0.1-beta.4"
@@ -8616,7 +8618,6 @@ __metadata:
     axios: "npm:^1.7.2"
     clsx: "npm:^2.1.1"
     filesize: "npm:10.1.4"
-    postcss: "npm:*"
     prettier: "npm:^3.3.3"
     react: "npm:^18.3.1"
     react-confetti: "npm:6.1.0"
@@ -15859,6 +15860,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"maps@workspace:modules/mosqueicu--maps":
+  version: 0.0.0-use.local
+  resolution: "maps@workspace:modules/mosqueicu--maps"
+  dependencies:
+    "@babel/parser": "npm:7.24.4"
+    "@mapbox/geojsonhint": "npm:3.3.0"
+    "@swc-node/register": "npm:1.9.0"
+    "@typescript-eslint/eslint-plugin": "npm:7.7.1"
+    "@typescript-eslint/parser": "npm:7.7.1"
+    "@webpack-cli/generators": "npm:^3.0.7"
+    cesium: "npm:1.115.0"
+    eslint: "npm:8.57.0"
+    eslint-config-openlayers: "npm:12.0.0"
+    eslint-import-resolver-typescript: "npm:3.6.1"
+    eslint-plugin-import: "npm:2.29.1"
+    ol: "npm:9.1.0"
+    parcel: "npm:2.12.0"
+    proj4: "npm:2.11.0"
+    recast: "npm:0.23.6"
+    typedoc: "npm:0.25.13"
+    typescript: "npm:5.4.5"
+    webpack-cli: "npm:^5.1.4"
+  peerDependencies:
+    cesium: ">= 1.90.0"
+    ol: 7 || 8 || 9
+  languageName: unknown
+  linkType: soft
+
 "markdown-to-jsx@npm:^7.4.5":
   version: 7.5.0
   resolution: "markdown-to-jsx@npm:7.5.0"
@@ -16441,6 +16470,46 @@ __metadata:
   checksum: 10c0/47dc5b6d04f6e7df0ff330ca9b2a37c688a682ed661e9432b0b327e1e6c43eedad052151b8d50d6beea8b924828d2a92fa4625c18d651bf2d93d8f03aa0172fa
   languageName: node
   linkType: hard
+
+"modules@workspace:home":
+  version: 0.0.0-use.local
+  resolution: "modules@workspace:home"
+  dependencies:
+    "@chromatic-com/storybook": "npm:^1.6.1"
+    "@rsbuild/core": "npm:^1.0.1-beta.4"
+    "@rsbuild/plugin-react": "npm:^1.0.1-beta.4"
+    "@rsbuild/plugin-svgr": "npm:^1.0.1-beta.4"
+    "@storybook/addon-actions": "npm:8.2.9"
+    "@storybook/addon-essentials": "npm:^8.2.9"
+    "@storybook/addon-interactions": "npm:^8.2.9"
+    "@storybook/addon-links": "npm:^8.2.9"
+    "@storybook/addon-onboarding": "npm:^8.2.9"
+    "@storybook/addon-webpack5-compiler-swc": "npm:^1.0.5"
+    "@storybook/blocks": "npm:^8.2.9"
+    "@storybook/react": "npm:^8.2.9"
+    "@storybook/react-webpack5": "npm:^8.2.9"
+    "@storybook/test": "npm:^8.2.9"
+    "@tailwindcss/forms": "npm:^0.5.7"
+    "@tailwindcss/typography": "npm:^0.5.13"
+    "@types/react": "npm:^18.3.3"
+    "@types/react-dom": "npm:^18.3.0"
+    autoprefixer: "npm:^10.4.19"
+    axios: "npm:^1.7.2"
+    clsx: "npm:^2.1.1"
+    filesize: "npm:10.1.4"
+    prettier: "npm:^3.3.3"
+    react: "npm:^18.3.1"
+    react-confetti: "npm:6.1.0"
+    react-dom: "npm:^18.3.1"
+    react-router-dom: "npm:^6.25.1"
+    storybook: "npm:^8.2.9"
+    storybook-react-rsbuild: "npm:^0.0.13"
+    strip-ansi: "npm:7.1.0"
+    tailwind-merge: "npm:^2.4.0"
+    tailwindcss: "npm:^3.4.6"
+    typescript: "npm:^5.5.4"
+  languageName: unknown
+  linkType: soft
 
 "moment@npm:^2.29.4":
   version: 2.30.1
@@ -17453,34 +17522,6 @@ __metadata:
   checksum: 10c0/f6b158e442a23b934ef24acb6f86748b3a35b93d6b7af5b64b6cb46c6b9f878178087e15dc80c5feb48533b272dd23def608921b6e53cf40f47e092c21eaf290
   languageName: node
   linkType: hard
-
-"olcs@workspace:modules/mosqueicu--maps":
-  version: 0.0.0-use.local
-  resolution: "olcs@workspace:modules/mosqueicu--maps"
-  dependencies:
-    "@babel/parser": "npm:7.24.4"
-    "@mapbox/geojsonhint": "npm:3.3.0"
-    "@swc-node/register": "npm:1.9.0"
-    "@typescript-eslint/eslint-plugin": "npm:7.7.1"
-    "@typescript-eslint/parser": "npm:7.7.1"
-    "@webpack-cli/generators": "npm:^3.0.7"
-    cesium: "npm:1.115.0"
-    eslint: "npm:8.57.0"
-    eslint-config-openlayers: "npm:12.0.0"
-    eslint-import-resolver-typescript: "npm:3.6.1"
-    eslint-plugin-import: "npm:2.29.1"
-    ol: "npm:9.1.0"
-    parcel: "npm:2.12.0"
-    proj4: "npm:2.11.0"
-    recast: "npm:0.23.6"
-    typedoc: "npm:0.25.13"
-    typescript: "npm:5.4.5"
-    webpack-cli: "npm:^5.1.4"
-  peerDependencies:
-    cesium: ">= 1.90.0"
-    ol: 7 || 8 || 9
-  languageName: unknown
-  linkType: soft
 
 "on-finished@npm:2.4.1":
   version: 2.4.1
@@ -18955,39 +18996,6 @@ __metadata:
   checksum: 10c0/6c8d591bc73beae4c1996b7b7138233a7dbbbdde29b7b6d822a02d08cd220fd27613f47d6e9635989b12e250d42ef9da3448de1ed12ad962974e207ab3c3562c
   languageName: node
   linkType: hard
-
-"radiant@workspace:home":
-  version: 0.0.0-use.local
-  resolution: "radiant@workspace:home"
-  dependencies:
-    "@headlessui/react": "npm:^2.1.1"
-    "@heroicons/react": "npm:^2.1.4"
-    "@sanity/image-url": "npm:^1.0.2"
-    "@sanity/vision": "npm:^3.52.2"
-    "@types/node": "npm:^20"
-    "@types/react": "npm:^18"
-    "@types/react-dom": "npm:^18"
-    autoprefixer: "npm:^10.4.20"
-    clsx: "npm:^2.1.1"
-    dayjs: "npm:^1.11.12"
-    eslint: "npm:^8"
-    eslint-config-next: "npm:14.2.11"
-    feed: "npm:^4.2.2"
-    framer-motion: "npm:^11.2.10"
-    next: "npm:14.2.11"
-    next-sanity: "npm:^9.4.7"
-    postcss: "npm:^8.4.40"
-    prettier: "npm:^3.3.2"
-    prettier-plugin-organize-imports: "npm:^4.0.0"
-    prettier-plugin-tailwindcss: "npm:^0.6.5"
-    react: "npm:^18"
-    react-dom: "npm:^18"
-    react-use-measure: "npm:^2.1.1"
-    sanity: "npm:^3.55.0"
-    tailwindcss: "npm:^3.4.7"
-    typescript: "npm:^5"
-  languageName: unknown
-  linkType: soft
 
 "raf@npm:^3.4.1":
   version: 3.4.1
@@ -22919,6 +22927,39 @@ __metadata:
   checksum: 10c0/b4d1b751f634079bd177a89eef84d80fa5bb8d6fc15d72ab40fc2b9ca5167a79b56585e1a849e9e27e259803ee5c4365cb719e54af70a43c06358ec268ff4ebf
   languageName: node
   linkType: hard
+
+"website@workspace:website":
+  version: 0.0.0-use.local
+  resolution: "website@workspace:website"
+  dependencies:
+    "@headlessui/react": "npm:^2.1.1"
+    "@heroicons/react": "npm:^2.1.4"
+    "@sanity/image-url": "npm:^1.0.2"
+    "@sanity/vision": "npm:^3.52.2"
+    "@types/node": "npm:^20"
+    "@types/react": "npm:^18"
+    "@types/react-dom": "npm:^18"
+    autoprefixer: "npm:^10.4.20"
+    clsx: "npm:^2.1.1"
+    dayjs: "npm:^1.11.12"
+    eslint: "npm:^8"
+    eslint-config-next: "npm:14.2.11"
+    feed: "npm:^4.2.2"
+    framer-motion: "npm:^11.2.10"
+    next: "npm:14.2.11"
+    next-sanity: "npm:^9.4.7"
+    postcss: "npm:^8.4.40"
+    prettier: "npm:^3.3.2"
+    prettier-plugin-organize-imports: "npm:^4.0.0"
+    prettier-plugin-tailwindcss: "npm:^0.6.5"
+    react: "npm:^18"
+    react-dom: "npm:^18"
+    react-use-measure: "npm:^2.1.1"
+    sanity: "npm:^3.55.0"
+    tailwindcss: "npm:^3.4.7"
+    typescript: "npm:^5"
+  languageName: unknown
+  linkType: soft
 
 "whatwg-encoding@npm:^3.1.1":
   version: 3.1.1

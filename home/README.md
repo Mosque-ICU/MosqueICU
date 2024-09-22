@@ -1,52 +1,45 @@
-# Radiant
+# React + Tailwind CSS + RSBuild Boilerplate
 
-Radiant is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org), with a blog powered by [Sanity](https://www.sanity.io).
+> React + React Router + Tailwind Css with RSBuild boilerplate.
 
-## Getting started
+A bare minimum, and as much as un-opinionated as can be, boilerplate, so you can start develop and deploy React apps with Tailwind CSS and RSBuild.
 
-To get started with this template, first install the npm dependencies:
+### Features
 
-```bash
-npm install
+- [x] Blazingly Fast!
+- [x] Routing and Lazy Loading routes
+- [x] React Suspense
+- [x] React 18
+- [x] Importing `svg` as React Components
+- [x] Fast Refresh
+- [x] Tailwind CSS Forms and Typography
+- [x] TypeScript
+- [x] Create new project with `npx create-rtw-app` or `yarn create rtw-app`
+
+### Install
+
+```$shell
+$ git clone && yarn
 ```
 
-Next, create a new Sanity project to power the blog within this template:
+### Development
 
-```bash
-npm create sanity@latest -- --env=.env.local --create-project "Radiant Blog" --dataset production
+Copy `.env.example` to `.env` or `.env.local`
+
+```$shell
+$ yarn dev
 ```
 
-This will prompt you to create a new Sanity account if you don't have one already. When asked "Would you like to add configuration files for a Sanity project in this Next.js folder?", choose "n".
+Default port is 3000 (or first available port). You can pass `--port`.
 
-Next, optionally import the demo seed data for the blog:
+### Build
 
-```bash
-npx sanity@latest dataset import seed.tar.gz
+```$shell
+$ yarn build
 ```
 
-Next, run the development server:
+### Links
 
-```bash
-npm run dev
-```
-
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
-To manage your blog content, visit the embedded Sanity Studio at [http://localhost:3000/studio](http://localhost:3000/studio).
-
-## Customizing
-
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [Sanity](https://www.sanity.io) - the Sanity website
+- React - https://react.dev/
+- TailwindCss - https://tailwindcss.com/
+- RSBuild - https://rsbuild.dev/
